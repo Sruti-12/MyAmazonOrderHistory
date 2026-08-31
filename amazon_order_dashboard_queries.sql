@@ -3,9 +3,7 @@
 -- ============================================================
 -- These queries reproduce the data behind each chart in the two
 -- BIA project dashboards. Column names below are inferred from
--- the Tableau field labels visible in the exported PDFs — rename
--- them to match your actual Amazon_order table if they differ.
---
+-- t
 -- Assumed columns on Amazon_order:
 --   order_id                (order identifier)
 --   order_date              (date the order was placed)
