@@ -43,8 +43,7 @@ ORDER BY count_of_order_id DESC;
 
 -- Chart: Shipping Charges (Yes/No pie)
 -- Whether an order incurred a shipping charge.
--- If Amazon_order already has a Yes/No column for this, skip the
--- CASE and GROUP BY that column directly instead.
+-- 
 SELECT
     CASE WHEN shipping_charge > 0 THEN 'Yes' ELSE 'No' END AS shipping_charges,
     COUNT(order_id) AS order_count
